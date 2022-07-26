@@ -12,11 +12,14 @@ namespace ManejoPresupuesto.Servicios
 
     public interface IRepositorioTiposCuentas
     {
+
         Task Actualizar(TipoCuentaModel tipoCuenta);
-        Task Crear(TipoCuentaModel tipocuenta);
-        Task<bool> Existe(string Nombre, int UsuarioId);
+        Task Borrar(int id);
+        Task Crear(TipoCuentaModel tipoCuenta);
+        Task<bool> Existe(string nombre, int usuarioId);
         Task<IEnumerable<TipoCuentaModel>> Obtener(int usuarioId);
         Task<TipoCuentaModel> ObtenerPorId(int id, int usuarioId);
+        Task Ordenar(IEnumerable<TipoCuentaModel> tipoCuentasOrdenados);
     }
     public class RepositorioTiposCuentas : IRepositorioTiposCuentas
     {
@@ -48,7 +51,7 @@ namespace ManejoPresupuesto.Servicios
         {
             using var connection = new SqlConnection(connectionString);
 
-            return await connection.QueryAsync<TipoCuentaModel>($"Select Nombre, UsuarioId, Orden " +
+            return await connection.QueryAsync<TipoCuentaModel>($"Select Id, Nombre, UsuarioId, Orden " +
                 $"FROM TiposCuentas WHERE UsuarioId = @UsuarioId",
                 new { usuarioId });
 
@@ -70,5 +73,15 @@ namespace ManejoPresupuesto.Servicios
                                                                 new { id, usuarioId });
         }
 
+        public async Task Borrar(int id)
+        {
+            using var connection = new SqlConnection(connectionString);
+            await connection.ExecuteAsync("DELETE TiposCuentas WHERE id = @Id", new { id });
+        }
+
+        public Task Ordenar(IEnumerable<TipoCuentaModel> tipoCuentasOrdenados)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,0 +1,41 @@
+﻿#idReordenable tr {
+    cursor: move
+}
+
+.contenedor-totales{
+    display:flex;
+    justify-content: space-around;
+    font-size: 26px;
+    text-align: center;
+}
+
+.activo{
+    color: green
+}
+
+.pasivo{
+    color: orangered
+}
+
+.acordeon-cuentas button{
+    color: black !important;
+    font-size: 20px;
+}
+
+/*.acordeon-cuentas button > span{
+    display: grid;
+    justify-content: space-between;
+    width: 100%;
+}*/
+
+.card-header{
+    display: grid !important;
+    justify-content: inherit;
+    width: 100%
+}
+
+.list-group-item {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}

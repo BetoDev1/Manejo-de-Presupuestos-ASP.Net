@@ -28,6 +28,7 @@ namespace ManejoPresupuesto
             services.AddControllersWithViews();
             services.AddTransient<IRepositorioTiposCuentas, RepositorioTiposCuentas>();
             services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
+            services.AddTransient<IRepositorioCuentas, RepositorioCuentas>();
             
         }
 

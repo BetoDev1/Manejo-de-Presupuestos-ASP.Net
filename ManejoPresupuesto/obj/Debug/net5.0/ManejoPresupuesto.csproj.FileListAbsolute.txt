@@ -66,3 +66,7 @@ C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\bin\Debug\net5
 C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\TiposCuentas\Index.cshtml.g.cs
 C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\Home\NoEncontrado.cshtml.g.cs
 C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\TiposCuentas\Editar.cshtml.g.cs
+C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\TiposCuentas\Borrar.cshtml.g.cs
+C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\Cuentas\Crear.cshtml.g.cs
+C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\obj\Debug\net5.0\Razor\Views\Cuentas\Index.cshtml.g.cs
+C:\Users\Beto240\source\repos\ManejoPresupuesto\ManejoPresupuesto\bin\Debug\net5.0\libman.json
