@@ -29,7 +29,10 @@ namespace ManejoPresupuesto
             services.AddTransient<IRepositorioTiposCuentas, RepositorioTiposCuentas>();
             services.AddTransient<IServicioUsuarios, ServicioUsuarios>();
             services.AddTransient<IRepositorioCuentas, RepositorioCuentas>();
-            
+            services.AddAutoMapper(typeof(Program));
+            services.AddTransient<IRepositorioCategorias, RepositorioCategorias>();
+            services.AddTransient<IRepositorioTransacciones, RepositorioTransacciones>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
